@@ -13,6 +13,11 @@
 		63F4DD1128706711002A9F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F4DD0F28706711002A9F36 /* Main.storyboard */; };
 		63F4DD1328706713002A9F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F4DD1228706713002A9F36 /* Assets.xcassets */; };
 		63F4DD1628706713002A9F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F4DD1428706713002A9F36 /* LaunchScreen.storyboard */; };
+		63F4DD1E28716EEA002A9F36 /* MemoListVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4DD1D28716EEA002A9F36 /* MemoListVCTableViewController.swift */; };
+		63F4DD2028716F54002A9F36 /* MemoFormVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4DD1F28716F54002A9F36 /* MemoFormVCViewController.swift */; };
+		63F4DD2228716F69002A9F36 /* MemoReadVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4DD2128716F69002A9F36 /* MemoReadVCViewController.swift */; };
+		63F4DD24287170EA002A9F36 /* MemoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4DD23287170EA002A9F36 /* MemoCellTableViewCell.swift */; };
+		63F4DD2628717137002A9F36 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F4DD2528717137002A9F36 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		63F4DD1228706713002A9F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63F4DD1528706713002A9F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63F4DD1728706713002A9F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F4DD1D28716EEA002A9F36 /* MemoListVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVCTableViewController.swift; sourceTree = "<group>"; };
+		63F4DD1F28716F54002A9F36 /* MemoFormVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVCViewController.swift; sourceTree = "<group>"; };
+		63F4DD2128716F69002A9F36 /* MemoReadVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVCViewController.swift; sourceTree = "<group>"; };
+		63F4DD23287170EA002A9F36 /* MemoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCellTableViewCell.swift; sourceTree = "<group>"; };
+		63F4DD2528717137002A9F36 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				63F4DD1228706713002A9F36 /* Assets.xcassets */,
 				63F4DD1428706713002A9F36 /* LaunchScreen.storyboard */,
 				63F4DD1728706713002A9F36 /* Info.plist */,
+				63F4DD1D28716EEA002A9F36 /* MemoListVCTableViewController.swift */,
+				63F4DD1F28716F54002A9F36 /* MemoFormVCViewController.swift */,
+				63F4DD2128716F69002A9F36 /* MemoReadVCViewController.swift */,
+				63F4DD23287170EA002A9F36 /* MemoCellTableViewCell.swift */,
+				63F4DD2528717137002A9F36 /* MemoData.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F4DD2028716F54002A9F36 /* MemoFormVCViewController.swift in Sources */,
+				63F4DD2628717137002A9F36 /* MemoData.swift in Sources */,
+				63F4DD2228716F69002A9F36 /* MemoReadVCViewController.swift in Sources */,
+				63F4DD1E28716EEA002A9F36 /* MemoListVCTableViewController.swift in Sources */,
 				63F4DD0E28706711002A9F36 /* ViewController.swift in Sources */,
 				63F4DD0A28706711002A9F36 /* AppDelegate.swift in Sources */,
 				63F4DD0C28706711002A9F36 /* SceneDelegate.swift in Sources */,
+				63F4DD24287170EA002A9F36 /* MemoCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +312,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +324,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,6 +340,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
